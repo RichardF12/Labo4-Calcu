@@ -11,7 +11,7 @@ import AbstractFactory.Convert;
  *
  * @author ricky
  */
-public interface FactoryProducer {
+public interface MultiUse{
     public Calculo newArithmetic(int c);
     public Convert newConversion(int d);
 }

@@ -10,5 +10,6 @@ package AbstractFactory;
  * @author ricky
  */
 public interface Convert {
+    String ConvertirBin(int a);
     int Convertir(int a);
 }

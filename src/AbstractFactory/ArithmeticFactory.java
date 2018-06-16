@@ -5,6 +5,7 @@
  */
 package AbstractFactory;
 
+import AbstractProducts.MultiUse;
 import Factory.Divide;
 import Factory.Multi;
 import Factory.Sub;
@@ -14,7 +15,8 @@ import Factory.Sum;
  *
  * @author ricky
  */
-public class ArithmeticFactory {
+public class ArithmeticFactory implements MultiUse{
+    @Override
     public Calculo newArithmetic(int c){
         switch(c){
             case 1:
@@ -31,5 +33,10 @@ public class ArithmeticFactory {
                 return division;
         }
         return null;
+    }
+
+    @Override
+    public Convert newConversion(int d) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

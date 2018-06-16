@@ -3,31 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractFactory;
+package Factory;
 
-import AbstractProducts.MultiUse;
-import Factory.Binary;
-
-
+import AbstractFactory.Convert;
 /**
  *
  * @author ricky
  */
-public class ConverterFactory implements MultiUse{
+public class Binary implements Convert{
 
     @Override
-    public Convert newConversion(int d) {
-        switch(d){
-            case 1:
-                return new Binary();
-        }
-        return null;
+    public String ConvertirBin(int a){
+        return Integer.toBinaryString(a);
         
     }
-    
+
     @Override
-    public Calculo newArithmetic(int c) {
+    public int Convertir(int a) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
 }
