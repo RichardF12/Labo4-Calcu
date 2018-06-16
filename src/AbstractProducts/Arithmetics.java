@@ -11,7 +11,6 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Scanner;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -24,7 +23,7 @@ public class Arithmetics extends JPanel{
     ArithmeticFactory AF = new ArithmeticFactory();
     
 
-    public int WIDTH = 500, widthTF=120, widthB=50;
+    public int WIDTH = 435, widthTF=120, widthB=50;
     public int HEIGHT = 120, heightTF=30, heightB=30;
     public JTextField textF1,textF2,textF3;
     public JButton button,button2,button3,button4;
